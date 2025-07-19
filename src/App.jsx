@@ -1,10 +1,12 @@
-import Button from "./Button/Button"
+import Student from "./Student"
 
 function App() {
  
   return (
     <>
-      <Button />
+      <Student name="Bob" age={30} isStudent={true}/>
+      <Student name="John" age={25} isStudent={false}/>
+      <Student />    
     </>
   )
 }
