@@ -1,12 +1,9 @@
-import Student from "./Student"
-
+import Fruits from "./components/Fruits";
 function App() {
  
   return (
     <>
-      <Student name="Bob" age={30} isStudent={true}/>
-      <Student name="John" age={25} isStudent={false}/>
-      <Student />    
+      <Fruits />
     </>
   )
 }
