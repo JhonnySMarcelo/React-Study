@@ -1,6 +1,10 @@
 import { useState } from "react";
 export default function Form() {
   const [name, setName] = useState({ firstName: "", lastName: "" });
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
 
   return (
     <div>
@@ -22,6 +26,7 @@ export default function Form() {
           placeholder="Enter your last name"
           value={name.lastName}
         />
+        <button onClick={(e) => handleSubmit(e)}>Add</button>
       </form>
     </div>
   );
